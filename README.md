@@ -47,7 +47,7 @@ workflowpro-qa-automation/
 ├── conftest.py
 ├── browserstack.yml          
 │
-├── Case_Study_Solution.pdf
+├── Krishna Tolani_Case Study_Solution.pdf
 │    
 │
 ├── pages/
