@@ -1,0 +1,35 @@
+framework: pytest
+
+platforms:
+  # Chrome on Windows
+  - browserName: chrome
+    browserVersion: latest
+    os: Windows
+    osVersion: 11
+
+  # Firefox on Windows
+  - browserName: firefox
+    browserVersion: latest
+    os: Windows
+    osVersion: 11
+
+  # Safari on macOS
+  - browserName: safari
+    browserVersion: latest
+    os: OS X
+    osVersion: Ventura
+
+  # Chrome on Android
+  - browserName: chrome
+    deviceName: Samsung Galaxy S22
+    osVersion: 12.0
+
+buildName: WorkflowPro QA Automation
+projectName: WorkflowPro Multi-Platform Testing
+
+parallelsPerPlatform: 1
+
+debug: true
+networkLogs: true
+consoleLogs: info
+video: true
