@@ -45,18 +45,22 @@ workflowpro-qa-automation/
 ├── pytest.ini
 ├── .gitignore
 ├── conftest.py
+├── browserstack.yml          
 │
 ├── case-study/
 │   └── Case_Study_Solution.pdf
 │
 ├── pages/
+│   ├── __init__.py
 │   ├── login_page.py
 │   └── project_page.py
 │
 ├── api/
+│   ├── __init__.py
 │   └── client.py
 │
 └── tests/
+    ├── __init__.py
     ├── test_login.py
     ├── test_multi_tenant.py
     └── test_project_creation.py
