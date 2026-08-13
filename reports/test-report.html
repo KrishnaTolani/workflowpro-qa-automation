@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkFlow Pro - QA Automation Test Report</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            color: #263238;
+        }
+
+        .header {
+            background: #172554;
+            color: white;
+            padding: 30px 45px;
+        }
+
+        .header h1 {
+            margin: 0 0 8px;
+            font-size: 28px;
+        }
+
+        .header p {
+            margin: 4px 0;
+            color: #dbeafe;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .notice {
+            background: #fff7ed;
+            border-left: 5px solid #f97316;
+            padding: 15px 18px;
+            margin-bottom: 25px;
+            border-radius: 5px;
+            line-height: 1.5;
+        }
+
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+            font-size: 14px;
+            color: #64748b;
+            text-transform: uppercase;
+        }
+
+        .number {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .green {
+            color: #16a34a;
+        }
+
+        .red {
+            color: #dc2626;
+        }
+
+        .orange {
+            color: #ea580c;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #172554;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th {
+            background: #f1f5f9;
+            text-align: left;
+            padding: 13px;
+            border-bottom: 2px solid #cbd5e1;
+        }
+
+        td {
+            padding: 13px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 5px 11px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .pass {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .info {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .warning {
+            background: #ffedd5;
+            color: #9a3412;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+        }
+
+        pre {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 18px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        .footer {
+            text-align: center;
+            color: #64748b;
+            padding: 25px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 800px) {
+            .summary {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .container {
+                padding: 0 12px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>WorkFlow Pro QA Automation</h1>
+    <p>B2B SaaS Platform – Multi-Platform Automation</p>
+    <p><strong>Candidate:</strong> Krishna Tolani</p>
+    <p><strong>Role:</strong> QA Automation Engineering Intern</p>
+</div>
+
+<div class="container">
+
+
+
+    <div class="summary">
+
+        <div class="card">
+            <h3>Total Tests</h3>
+            <div class="number">5</div>
+        </div>
+
+        <div class="card">
+            <h3>Passed</h3>
+            <div class="number green">5</div>
+        </div>
+
+        <div class="card">
+            <h3>Failed</h3>
+            <div class="number red">0</div>
+        </div>
+
+        <div class="card">
+            <h3>Pass Rate</h3>
+            <div class="number green">100%</div>
+        </div>
+
+    </div>
+
+
+    <section>
+        <h2>Execution Information</h2>
+
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Value</th>
+            </tr>
+
+            <tr>
+                <td>Framework</td>
+                <td>pytest</td>
+            </tr>
+
+            <tr>
+                <td>UI Automation</td>
+                <td>Playwright</td>
+            </tr>
+
+            <tr>
+                <td>API Testing</td>
+                <td>Requests</td>
+            </tr>
+
+            <tr>
+                <td>Cross-Platform</td>
+                <td>BrowserStack</td>
+            </tr>
+
+            <tr>
+                <td>Language</td>
+                <td>Python</td>
+            </tr>
+
+            <tr>
+                <td>Execution Type</td>
+                <td>Sample / Illustrative</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <section>
+        <h2>Test Results</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Test ID</th>
+                    <th>Test Case</th>
+                    <th>Test File</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>TC-001</td>
+                    <td>User Login</td>
+                    <td><code>tests/test_login.py</code></td>
+                    <td>
+                        <span class="status pass">PASS*</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>TC-002</td>
+                    <td>Multi-Tenant Access</td>
+                    <td><code>tests/test_multi_tenant.py</code></td>
+                    <td>
+                        <span class="status pass">PASS*</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>TC-003</td>
+                    <td>Project Creation API</td>
+                    <td><code>tests/test_project_creation.py</code></td>
+                    <td>
+                        <span class="status pass">PASS*</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>TC-004</td>
+                    <td>Project UI Verification</td>
+                    <td><code>tests/test_project_creation.py</code></td>
+                    <td>
+                        <span class="status pass">PASS*</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>TC-005</td>
+                    <td>Tenant Isolation</td>
+                    <td><code>tests/test_project_creation.py</code></td>
+                    <td>
+                        <span class="status pass">PASS*</span>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <p>
+            <strong>*</strong> PASS indicates the expected outcome of the
+            proposed automation scenario. These are not results from a live
+            WorkFlow Pro environment.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>Test Case Details</h2>
+
+        <h3>TC-001 – User Login</h3>
+
+        <p>
+            <strong>Objective:</strong>
+            Verify that a valid user can successfully authenticate.
+        </p>
+
+        <p>
+            <strong>Expected Result:</strong>
+            User is redirected to the dashboard and the welcome message
+            becomes visible.
+        </p>
+
+        <p>
+            <span class="status pass">EXPECTED PASS</span>
+        </p>
+
+
+        <h3>TC-002 – Multi-Tenant Access</h3>
+
+        <p>
+            <strong>Objective:</strong>
+            Verify that Company 2 users can access only Company 2 data.
+        </p>
+
+        <p>
+            <strong>Expected Result:</strong>
+            Company 2 projects are visible and Company 1 resources are
+            not exposed.
+        </p>
+
+        <p>
+            <span class="status pass">EXPECTED PASS</span>
+        </p>
+
+
+        <h3>TC-003 – Project Creation API</h3>
+
+        <p>
+            <strong>Objective:</strong>
+            Verify project creation through the API.
+        </p>
+
+        <p>
+            <strong>Expected Result:</strong>
+            API returns a successful response containing project ID,
+            project name, and active status.
+        </p>
+
+        <p>
+            <span class="status pass">EXPECTED PASS</span>
+        </p>
+
+
+        <h3>TC-004 – Project UI Verification</h3>
+
+        <p>
+            <strong>Objective:</strong>
+            Verify that a project created through the API appears in
+            the web UI.
+        </p>
+
+        <p>
+            <strong>Expected Result:</strong>
+            The project is displayed to the owning tenant.
+        </p>
+
+        <p>
+            <span class="status pass">EXPECTED PASS</span>
+        </p>
+
+
+        <h3>TC-005 – Tenant Isolation</h3>
+
+        <p>
+            <strong>Objective:</strong>
+            Verify that Company 2 cannot access a Company 1 project.
+        </p>
+
+        <p>
+            <strong>Expected Result:</strong>
+            Cross-tenant API access is rejected and the project is not
+            displayed in the Company 2 UI.
+        </p>
+
+        <p>
+            <span class="status pass">EXPECTED PASS</span>
+        </p>
+
+    </section>
+
+
+    <section>
+        <h2>Browser / Platform Coverage</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Platform</th>
+                    <th>Browser / Device</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Desktop</td>
+                    <td>Chromium</td>
+                    <td><span class="status pass">EXPECTED PASS</span></td>
+                </tr>
+
+                <tr>
+                    <td>Desktop</td>
+                    <td>Firefox</td>
+                    <td><span class="status pass">EXPECTED PASS</span></td>
+                </tr>
+
+                <tr>
+                    <td>Desktop</td>
+                    <td>WebKit</td>
+                    <td><span class="status pass">EXPECTED PASS</span></td>
+                </tr>
+
+                <tr>
+                    <td>Mobile</td>
+                    <td>Android / Chrome</td>
+                    <td><span class="status info">PLANNED</span></td>
+                </tr>
+
+                <tr>
+                    <td>Mobile</td>
+                    <td>iOS / Safari</td>
+                    <td><span class="status info">PLANNED</span></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </section>
+
+
+    <section>
+        <h2>Testing Approach</h2>
+
+        <ul>
+            <li>Playwright is used for web UI automation.</li>
+            <li>pytest is used for test execution and fixtures.</li>
+            <li>Requests is used for API testing.</li>
+            <li>API-created data is used for efficient integration testing.</li>
+            <li>Unique test data helps prevent parallel execution conflicts.</li>
+            <li>Tenant isolation is validated at both UI and API levels.</li>
+            <li>Playwright's automatic waiting is preferred over fixed sleeps.</li>
+            <li>BrowserStack is proposed for real mobile/browser coverage.</li>
+            <li>CI/CD can execute smoke tests on pull requests and regression
+                tests on scheduled builds.</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>Flaky Test Prevention</h2>
+
+        <ul>
+            <li>Use Playwright auto-waiting and retrying assertions.</li>
+            <li>Avoid unnecessary <code>time.sleep()</code>.</li>
+            <li>Use stable locators.</li>
+            <li>Wait for meaningful application states.</li>
+            <li>Use isolated browser contexts.</li>
+            <li>Generate unique test data.</li>
+            <li>Keep tests independent.</li>
+            <li>Collect screenshots/traces when failures occur.</li>
+            <li>Investigate the root cause rather than relying only on retries.</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>Test Data</h2>
+
+        <p>
+            Test data should be isolated between test executions.
+            Project names can include a unique identifier to prevent
+            collisions during parallel execution.
+        </p>
+
+        <pre>Automation Project &lt;unique-id&gt;</pre>
+
+        <p>
+            Credentials and API tokens should be supplied through
+            environment variables or CI/CD secret storage rather than
+            being committed to source control.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>Known Limitations</h2>
+
+        <ul>
+            <li>No live WorkFlow Pro QA/staging environment was provided.</li>
+            <li>No real test credentials were provided.</li>
+            <li>The complete authentication and 2FA implementation is unknown.</li>
+            <li>The project deletion API was not specified.</li>
+            <li>The exact BrowserStack device matrix was not specified.</li>
+            <li>The expected HTTP status code for cross-tenant access
+                needs confirmation.</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>Intended Execution Command</h2>
+
+        <pre>pytest --html=reports/test-report.html --self-contained-html</pre>
+
+        <p>
+            When connected to a valid QA/staging environment, this command
+            can generate an actual pytest HTML execution report.
+        </p>
+    </section>
+
+</div>
+
+
+<div class="footer">
+    WorkFlow Pro QA Automation – Bynry Inc. Case Study<br>
+    Krishna Tolani
+</div>
+
+</body>
+</html>
