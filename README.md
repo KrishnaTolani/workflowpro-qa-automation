@@ -45,10 +45,17 @@ workflowpro-qa-automation/
 ├── pytest.ini
 ├── .gitignore
 ├── conftest.py
-├── browserstack.yml          
+├── browserstack.yml
 │
 ├── Krishna Tolani_Case Study_Solution.pdf
-│    
+│   
+│
+├── reports/
+│   └── test-report.html
+│
+├── test_data/
+│   ├── users.json
+│   └── projects.json
 │
 ├── pages/
 │   ├── __init__.py
@@ -64,7 +71,6 @@ workflowpro-qa-automation/
     ├── test_login.py
     ├── test_multi_tenant.py
     └── test_project_creation.py
-
 
 ## Technology Stack
 Python
