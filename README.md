@@ -134,3 +134,7 @@ Expected cross-tenant HTTP status codes
 UI selectors
 
 These assumptions are documented in the case-study solution.
+
+
+
+Case Study Link :- https://docs.google.com/document/d/14-UJRp5v68_lsI505FemvJ8fs_lYIhrmPutm8trHAVQ/edit?usp=sharing
