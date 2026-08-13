@@ -1,0 +1,10 @@
+{
+  "company1_project": {
+    "name": "Company1 Test Project",
+    "description": "Test project for automation"
+  },
+  "company2_project": {
+    "name": "Company2 Test Project",
+    "description": "Test project for tenant testing"
+  }
+}

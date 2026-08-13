@@ -1,0 +1,17 @@
+{
+  "company1_admin": {
+    "tenant": "company1",
+    "role": "admin",
+    "email": "admin@company1.com"
+  },
+  "company1_manager": {
+    "tenant": "company1",
+    "role": "manager",
+    "email": "manager@company1.com"
+  },
+  "company2_employee": {
+    "tenant": "company2",
+    "role": "employee",
+    "email": "employee@company2.com"
+  }
+}
