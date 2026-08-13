@@ -47,8 +47,8 @@ workflowpro-qa-automation/
 ├── conftest.py
 ├── browserstack.yml          
 │
-├── case-study/
-│   └── Case_Study_Solution.pdf
+├── Case_Study_Solution.pdf
+│    
 │
 ├── pages/
 │   ├── __init__.py
